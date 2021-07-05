@@ -13,7 +13,7 @@ const Navbar = () => {
 
             <nav className="navbar navbar-dark bg-dark">
                 <a className="navbar-brand" href="#">
-                    <i className="material-icons">wb_sunny</i>&nbsp;Nubel Ganso App</a>
+                    <i className="material-icons">wb_cloudy</i>&nbsp;Nubel Ganso App</a>
             </nav>
         </div>
 
