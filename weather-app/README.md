@@ -4,7 +4,7 @@ Proyecto Clima
 Dani, Colo y Seba
 #########################
 
-Test Dan
+Test colo
 
 # Getting Started with Create React App
 
