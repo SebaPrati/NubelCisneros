@@ -1,12 +1,12 @@
 import React from 'react'
-import UpperDashboard from './UpperDashboard'
+import History from './History'
 
 const SearchBox = () => {
     return (
         <div>
-            <div className="container fluid">
+            {/* <div className="container fluid">
                 <div className="row">
-                    <div className="col-md-3 border">
+                    <div className="col-md-3 border"> */}
                         <h2 className="text-secondary">Search for a city:</h2>
                         <div className="input-group mb-4">
                             <input type="text" className="form-control" id="searchinput"
@@ -21,29 +21,11 @@ const SearchBox = () => {
 
                             </div>
                         </div>
-                        <div className="mt-5" id="prevSearches">
-                            <label>Montevideo</label>
-                            <hr />
-                            <label>label 01</label>
-                            <hr />
-                            <label>label 01</label>
-                            <hr />
-                            <label>label 01</label>
-                            <hr />
-                            <label>label 01</label>
-                            <hr />
-                            <label>label 01</label>
-                            <hr />
-                            <label>label 01</label>
-                            <hr />
-                            <label>label 01</label>
-                            <hr />
-                        </div>
+                        <History/>
                     </div>
-                    <UpperDashboard />
-                </div>
-            </div>
-        </div>
+        //         </div>
+        //     </div>
+        // </div>
     )
 }
 

@@ -1,7 +1,7 @@
 import './App.css';
 import { Provider } from 'react-redux';
 import Navbar from './components/Navbar';
-import SearchBox from './components/SearchBox';
+import Container from './components/Container';
 import UpperDashboard from './components/UpperDashboard';
 
 
@@ -14,7 +14,7 @@ function App() {
     // <Provider>
     <div className="App">
       <Navbar/>
-      <SearchBox />
+      <Container />
       {/* <UpperDashboard/> */}
       </div>
     //  </Provider>
