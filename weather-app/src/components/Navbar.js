@@ -8,12 +8,12 @@ const Navbar = () => {
         <div>
             <head>
                 <Style />
-                <title>Nubel Cisneros App</title>
             </head>
 
             <nav className="navbar navbar-dark bg-dark">
                 <a className="navbar-brand" href="#">
-                    <i className="material-icons">wb_cloudy</i>&nbsp;Nubel Ganso App</a>
+                    {/* <i className="material-icons">wb_cloudy</i>&nbsp;Nubel Ganso App</a> */}
+                    <i className="bi bi-cloudy"></i>&nbsp;Weather App</a>
             </nav>
         </div>
 
