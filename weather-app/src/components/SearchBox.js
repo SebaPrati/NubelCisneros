@@ -22,7 +22,7 @@ const SearchBox = () => {
                             </div>
                         </div>
                         <div className="mt-5" id="prevSearches">
-                            <label>label 01</label>
+                            <label>Montevideo</label>
                             <hr />
                             <label>label 01</label>
                             <hr />
