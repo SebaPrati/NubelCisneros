@@ -1,12 +1,8 @@
 import React from 'react'
 
-const History = () => {
+const History = ({ city }) => {
     return (
-
-       
-        <div className="row mt-5" id="prevSearches">
-                <label>Montevideo</label>
-            </div>
+        <li id={city}>{city}</li>
 
     )
 }
