@@ -25,6 +25,7 @@ const UpperDashboard = () => {
                     <label className="text-secondary">five row with col left</label>
                 </div>
                 <div className="col-md-6 border">
+                    <i className="bi bi-cloudy bi-10x"/><br/>
                     <label className="text-secondary">five row with col right</label>
                 </div>
             </div>
