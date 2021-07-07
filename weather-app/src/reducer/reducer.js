@@ -8,11 +8,15 @@ const reducer = (state = initialState, action) => {
         case 'AGREGAR':
             console.log("agregar");
 
-            return ''
+            return '';
+
+
+
         default:
             console.log('switch', action);
             return ''
     }
+
 }
 
 
