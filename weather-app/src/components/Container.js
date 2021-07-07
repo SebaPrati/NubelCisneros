@@ -8,7 +8,7 @@ const Container = () => {
             <div className="container fluid">
                 <div className="row">
                     <div className="col-md-3 border">
-                    <SearchBox />
+                        <SearchBox />
                     </div>
                     <div className="col-md-9 border">
                         <UpperDashboard />
