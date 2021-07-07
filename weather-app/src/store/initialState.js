@@ -5,8 +5,12 @@ const initialState ={
     tempMax: 0,
     promMax: 0,
     promMin: 0,
-    ciudad: "Montevideo",
-    horaLocal: ""
-
+    ciudad: "Bienvenidos",
+    horaLocal: "",
+    temperaturas: []
 };
+const pepe = {
+    min: 0, 
+    max: 0
+}
 export default initialState;

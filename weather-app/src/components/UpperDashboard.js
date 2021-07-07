@@ -1,23 +1,31 @@
 import { useEffect } from "react";
 import React from 'react';
 import initialState from "../store/initialState";
+import {useSelector} from 'react-redux';
+
+
 
 const UpperDashboard = (state= initialState) => {
+    const ciudad = useSelector(state => state.ciudad);
+    const tempMax = forecast.;
+    const promMax = 0;
+    const promMin = 0;
+    
     return (
         <div className="col-md-12 border">
             <div className="row">
-                <h2 className="text-primary">{state.ciudad}
+                <h2 className="text-primary">{ciudad}
                     {/* icono de tablita del dashboard */}
                     <span className="bi bi-ui-checks"></span></h2>
             </div>
             <div className="row">
-                <label className="text-secondary">TEMPERATURA MAXIMA: variable </label>
+                <label className="text-secondary">TEMPERATURA MAXIMA: {tempMax} </label>
             </div>
             <div className="row">
-                <label className="text-secondary">TEMPERATURA MAX PROMEDIO 5 dias</label>
+                <label className="text-secondary">TEMPERATURA MAX PROMEDIO: {promMax} </label>
             </div>
             <div className="row">
-                <label className="text-secondary">TEMPERATURA MIN PROMEDIO 5 dias</label>
+                <label className="text-secondary">TEMPERATURA MIN PROMEDIO: {promMin}</label>
             </div>
             <div className="row">
                 <label className="text-secondary">HORA LOCAL</label>
