@@ -7,7 +7,7 @@ import {useSelector} from 'react-redux';
 
 const UpperDashboard = (state= initialState) => {
     const ciudad = useSelector(state => state.ciudad);
-    const tempMax = forecast.;
+    const tempMax = 0;
     const promMax = 0;
     const promMin = 0;
     
