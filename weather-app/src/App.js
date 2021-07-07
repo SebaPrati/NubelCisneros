@@ -3,21 +3,39 @@ import { Provider } from 'react-redux';
 import Navbar from './components/Navbar';
 import Container from './components/Container';
 import UpperDashboard from './components/UpperDashboard';
+import {createStore} from 'redux';
+import initialState from './store/initialState';
 
 
+const reducer = (state = initialState, action) => {
 
+  console.log(state, action);
 
+  switch (action.type) {
+
+    case "AGREGAR":
+      return { ...state, };
+
+    default:
+
+      return state;
+
+  }
+
+}
+
+const store = createStore(reducer);
 
 function App() {
   return (
 
-    // <Provider>
+     <Provider store={store}>
     <div className="App">
       <Navbar/>
       <Container />
       {/* <UpperDashboard/> */}
       </div>
-    //  </Provider>
+      </Provider>
   );
 
 }

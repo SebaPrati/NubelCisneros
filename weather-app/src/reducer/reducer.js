@@ -1,9 +1,16 @@
-const reducer = (action, ciudad) => {
+import initialState from "../store/initialState";
+
+const reducer = (state = initialState, action) => {
     console.log(action);
-    switch (action) {
+    
+    
+    switch (action.type) {
         case 'AGREGAR':
-            return { ciudad }
+            console.log("agregar");
+
+            return ''
         default:
+            console.log('switch', action);
             return ''
     }
 }

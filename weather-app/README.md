@@ -14,6 +14,10 @@ https://material-ui.com/es/components/material-icons/
 
 ++++++++++++++++++++++++++++
 
+KEY e62b2530fdb5f4ba3559c07c8634e5c7
+
+URL:https://api.openweathermap.org/data/2.5/forecast/daily?q={city name}&cnt={cnt}&appid={API key}
+
 
 
 # Getting Started with Create React App
