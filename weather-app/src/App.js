@@ -13,16 +13,15 @@ const reducer = (state = initialState, action) => {
 
   switch (action.type) {
 
-    case "AGREGAR":
-      return { ...state, };
-
     case "DATOS_PRONOSTICO":
       //nuevo [] con los datos que queremos
+
       console.log(action.payload);
+    
       return {
         ...state,
-        forecast: action.payload
-      
+        forecast: action.payload,
+        ciudad: action.ciudad
       }
       
     default:
