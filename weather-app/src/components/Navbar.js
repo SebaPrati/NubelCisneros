@@ -1,21 +1,22 @@
 import React from 'react'
 import Style from './Style.js'
-
+import "./Navbar.css"
 
 const Navbar = () => {
     return (
 
-        <div>
+        <div className="bg">
             <head>
                 <Style />
             </head>
+            <div>
+                <nav className="navbar navbar-dark bg-dark">
+                    <a className="icon">
 
-            <nav className="navbar navbar-dark bg-dark">
-                <a className="navbar-brand" href="#">
-
-                    <i className="material-icons">flutter_dash</i>&nbsp;Weather App</a>
-                {/* <i className="bi bi-cloudy"></i>&nbsp;Weather App</a> */}
-            </nav>
+                        <i className="icon material-icons">flutter_dash</i>&nbsp;El Sueño de Nubel</a>
+                    {/* <i className="bi bi-cloudy"></i>&nbsp;Weather App</a> */}
+                </nav>
+            </div>
         </div>
 
     )

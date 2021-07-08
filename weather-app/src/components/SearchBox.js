@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import { useDispatch } from 'react-redux';
-
+import './SearchBox.css'
 
 const SearchBox = () => {
 const texto = useRef(null);
@@ -22,16 +22,17 @@ const dispatch = useDispatch();
     }
 
     return (
-        <div className='row'>
-            <h2 className="text-secondary">Search for a city:</h2>
-            <div className="input-group mb-4">
-                <input className="form-control" id="searchinput" type="search" ref={texto} aria-label="Search" />
-                <div className="input-group-append">
-                    <button className="btn btn-primary" id="searchbtn" type="submit" onClick={AgregarCiudad}>
-                        <i className="material-icons">search</i>
+        <div className='topnav'>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <h2 className="text-secondary">Search for a City:</h2>
+            <div className="input-group mb-4 material-icons active">
+                 <input className="form-control" id="searchinput" type="search" ref={texto} placeholder="Search.." />
+                  <button className="btn btn-primary" id="searchbtn" type="submit" onClick={AgregarCiudad}>
+                        <i className="material-icons active">search</i> 
                     </button>
                     <hr />
-                </div>
+         
             </div>
         </div>            
 
