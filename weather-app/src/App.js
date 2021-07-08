@@ -15,13 +15,14 @@ const reducer = (state = initialState, action) => {
 
     case "DATOS_PRONOSTICO":
       //nuevo [] con los datos que queremos
-
-      console.log(action.payload);
+      const tempMin= action.payload.list[0].temp.min;
+      console.log("ACA",action.payload.list[0].temp.min);
     
       return {
         ...state,
         forecast: action.payload,
-        ciudad: action.ciudad
+        ciudad: action.ciudad,
+        tempMin: tempMin
       }
       
     default:
