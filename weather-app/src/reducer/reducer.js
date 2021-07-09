@@ -1,4 +1,5 @@
-import initialState from "../store/initialState";
+import initialState from "../store/initialState.js";
+
 
 const reducer = (_state = initialState, action) => {
     console.log(action);
@@ -9,10 +10,9 @@ const reducer = (_state = initialState, action) => {
             console.log("agregar");
             return '';
         default:
-            console.log('switch', action);
-            return ''
-    }
+            return { ...state };
 
+    }
 }
 
 
