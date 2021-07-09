@@ -12,7 +12,6 @@ const Navbar = () => {
             <div>
                 <nav className="navbar navbar-dark bg-dark">
                     <a className="icon">
-
                         <i className="icon material-icons">flutter_dash</i>&nbsp;El Sueño de Nubel</a>
                     {/* <i className="bi bi-cloudy"></i>&nbsp;Weather App</a> */}
                 </nav>

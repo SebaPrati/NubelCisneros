@@ -1,16 +1,21 @@
 
-const initialState ={
-    history: [],
-    forecast: [],
-    tempMax: 0,
-    promMax: 0,
-    promMin: 0,
-    ciudad: "Bienvenidos",
-    horaLocal: "",
-    temperaturas: []
+class initialState {
+    history = [];
+    forecast = [];
+    tempMax = Number;
+    promMax = Number;
+    promMin = Number;
+    ciudad = String;
+    horaLocal = String;
+    temperaturas = [];
+
+    constructor() {
+        this.forecast = [];
+        this.tempMax = 0;
+        this.promMax = 0;
+        this.promMin = 0;
+        this.ciudad = '';
+        this.horaLocal = '';
+    }
 };
-const pepe = {
-    min: 0, 
-    max: 0
-}
 export default initialState;
