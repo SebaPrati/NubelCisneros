@@ -5,7 +5,7 @@ const initialState ={
     tempMax: 0,
     promMax: 0,
     promMin: 0,
-    ciudad: "Bienvenidos",
+    ciudad: "Montevideo",
     horaLocal: "",
     temperaturas: []
 };

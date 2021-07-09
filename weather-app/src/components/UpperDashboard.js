@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import React from 'react';
-import initialState from "../store/initialState";
+import initialState from "../store/initialState.js";
 import { useSelector } from 'react-redux';
 
 const temperaturas = {
@@ -8,19 +8,42 @@ const temperaturas = {
     max: 0,
 }
 
-const valoresTemp = {
-    promMax:15,
+let valoresTemp = {
+    promMax:0,
     promMin:0,
-    tempMax:10,
+    tempMax:0,
     tempMin:0,
     ciudad: ""
 }
 
-const UpperDashboard = (state= state.forecast) => {
-    let forecast = useSelector(state => state.forecast);
-    valoresTemp.ciudad = useSelector(state => state.ciudad);
-    calculos (forecast.list);
 
+
+
+
+
+// const UpperDashboard = () => {
+const UpperDashboard = (state= initialState) => {
+    let forecast = useSelector(state => state.forecast);
+    console.log("ACA ESTA EL FORECAST: ", forecast);
+
+//     valoresTemp.ciudad = useSelector(state => state.ciudad);
+//     calculos(forecast.list);
+//     console.log("LINEA 24: ", forecast.list);
+
+//     // let tempMax = state.list[0].temp.max;
+// // console.log("STATE", state);
+
+
+    
+    
+    
+    // let tempMax = forecast[0].temp.max;
+    
+    
+    
+    
+    
+    
     return (
         <div className="col-md-12 border">
             <div className="row">
@@ -35,6 +58,7 @@ const UpperDashboard = (state= state.forecast) => {
             </div>
             <div className="row">
                 <label className="text-secondary">TEMPERATURA MAXIMA: {valoresTemp.tempMax} </label>
+                {/* <label className="text-secondary">TEMPERATURA MAXIMA: {tempMax} </label> */}
             </div>
             <div className="row">
                 <label className="text-secondary">TEMPERATURA MAX PROMEDIO: {valoresTemp.promMax} </label>
@@ -80,6 +104,8 @@ const UpperDashboard = (state= state.forecast) => {
 
 const calculos = (_forecast) => {
     console.log("calculos", _forecast);
+
+    console.log(_forecast);
     //console.log(Object.size(_forecast));
 }
 
