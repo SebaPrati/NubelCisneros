@@ -4,7 +4,7 @@ Proyecto Clima
 Dani, Colo y Seba
 #########################
 
-Test colo
+09/07/21 - Branch Dani
 
 ++++++++++++++++++++++++++++
 
@@ -19,7 +19,6 @@ KEY e62b2530fdb5f4ba3559c07c8634e5c7
 URL:https://api.openweathermap.org/data/2.5/forecast/daily?q={city name}&cnt={cnt}&appid={API key}
 
 sfagnoni@gmail.com
-
 
 # Getting Started with Create React App
 
