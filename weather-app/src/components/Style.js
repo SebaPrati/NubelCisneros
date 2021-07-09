@@ -17,5 +17,4 @@ const Style = () => {
         </div>
     )
 }
-
 export default Style
