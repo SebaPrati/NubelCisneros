@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import React from 'react';
 import initialState from "../store/initialState";
 import { useSelector } from 'react-redux';
-
+import "./SearchBox.css"
 
 const temperaturas = {
     min: 0,
@@ -51,12 +51,6 @@ const UpperDashboard = (state = initialState.forecast) => {
 
             valoresTemp.maxDias.push(Number(element.temp.max))
             valoresTemp.minDias.push(Number(element.temp.min))
-
-
-
-
-
-
         });
 
         valoresTemp.tempMax = Math.max.apply(Math, valoresTemp.maxDias);
@@ -150,7 +144,9 @@ const UpperDashboard = (state = initialState.forecast) => {
                         className="weather-icon"
                     />*/}
                     <span className="bi bi-ui-checks"></span></h2>
-            </div>
+            </div>   
+           <div className="col-md-3"></div> 
+           <div className="col-md-6">
             <div className="row">
                 <label className="text-secondary">TEMPERATURA MAXIMA: {valoresTemp.tempMax} </label>
             </div>
@@ -163,7 +159,8 @@ const UpperDashboard = (state = initialState.forecast) => {
             <div className="row">
                 <label className="text-secondary">TEMPERATURA MIN PROMEDIO: {valoresTemp.tempMin}</label>
             </div>
-
+             </div> 
+             <div className="col-md-3"> </div>     
             <div className="row">
                 <div className="col border">
                     <i className="bi bi-cloudy bi-2x" /><br />
