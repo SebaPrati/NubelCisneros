@@ -4,7 +4,7 @@ Proyecto Clima
 Dani, Colo y Seba
 #########################
 
-Test colo
+Test colo test
 
 ++++++++++++++++++++++++++++
 
