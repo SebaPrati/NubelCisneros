@@ -9,8 +9,8 @@ const initialState ={
     horaLocal: "",
     temperaturas: []
 };
-const pepe = {
-    min: 0, 
-    max: 0
-}
+// const pepe = {
+//     min: 0, 
+//     max: 0
+// }
 export default initialState;

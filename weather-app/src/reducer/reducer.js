@@ -20,11 +20,13 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 forecast: action.payload,
-                ciudad: "Montevideo"
+                ciudad: "Montevideo",
+                
+
             };
 
         default:
-            return state;
+            return { ...state };
 
     }
 }
