@@ -84,7 +84,7 @@ const UpperDashboard = (state = state.forecast) => {
 
 
 const calculos = (forecast) => {
-
+    // solo es un comentario. 
     let i = 0;
     console.log("calculos", forecast);
     forecast.forEach(element => {
