@@ -1,22 +1,34 @@
-import initialState from "../store/initialState";
+import initialState from "../store/initialState.js";
+
 
 const reducer = (state = initialState, action) => {
-    console.log(action);
-    
-    
+
+    console.log(state, action);
+    //   console.log(forecast);
+
     switch (action.type) {
-        case 'AGREGAR':
-            console.log("agregar");
 
-            return '';
+        case "DATOS_PRONOSTICO":
+    
+            return {
+                ...state,
+                forecast: action.payload,
+                ciudad: action.ciudad
+            };
+        case "CARGA_INICIAL":
 
+            return {
+                ...state,
+                forecast: action.payload,
+                ciudad: "Montevideo",
+                
 
+            };
 
         default:
-            console.log('switch', action);
-            return ''
-    }
+            return { ...state };
 
+    }
 }
 
 
