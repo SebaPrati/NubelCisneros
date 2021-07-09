@@ -9,22 +9,6 @@ const SearchBox = () => {
     const AgregarCiudad = e => {
         let ciudad = texto.current.value;
 
-        const url = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${ciudad}&cnt=5&appid=e62b2530fdb5f4ba3559c07c8634e5c7&units=metric`;
-        console.log('beforedispatch', ciudad);
-        fetch(url)
-            .then(r => r.json())
-            .then(datos => {
-                console.log(datos.lista);
-                dispatch({ type: "DATOS_PRONOSTICO", payload: datos, ciudad: ciudad });
-            })
-    })
-
-
-
-
-    const AgregarCiudad = e => {
-        let ciudad = texto.current.value;
-
         if (ciudad === "") {
 
             alert("POR FAVOR INGRESE EL NOMBRE DE UNA CIUDAD");

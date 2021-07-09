@@ -10,7 +10,7 @@ const reducer = (_state = initialState, action) => {
             console.log("agregar");
             return '';
         default:
-            return { ...state };
+            return { ..._state };
 
     }
 }
