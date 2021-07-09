@@ -20,13 +20,18 @@ console.log("CIUDAD: ", ciudad);
 
     
     const valoresTemp = {
-        promMax: "00.00",
-        promMin: "00.00",
-        tempMax: "00.00",
-        tempMin: "00.00",
+        promMax: 0,
+        promMin: 0,
+        tempMax: 0,
+        tempMin: 0,
         ciudad: "Montevideo",
         maxDias: [],
-        minDias: []
+        minDias: [],
+        tempMon: 0,
+        tempTue: 0,
+        tempWed: 0,
+        tempThu: 0,
+        tempFri: 0
 
     }
 
@@ -46,6 +51,12 @@ console.log("CIUDAD: ", ciudad);
 
         valoresTemp.maxDias.push(Number(element.temp.max))
         valoresTemp.minDias.push(Number(element.temp.min))
+        
+            
+            
+            
+            
+            
     });
 
     valoresTemp.tempMax = Math.max.apply(Math, valoresTemp.maxDias);
@@ -75,7 +86,7 @@ console.log("CIUDAD: ", ciudad);
 
     temps.forEach(element => {
         i++;
-        promedio = promedio + element;
+        promedio = promedio + Number(element);
     });
 
     return parseFloat(promedio / i).toFixed(2)
