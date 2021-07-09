@@ -101,12 +101,11 @@ const UpperDashboard = (state= initialState) => {
     )
 }
 
+// const calculos = (_forecast) => {
+//     console.log("calculos", _forecast);
 
-const calculos = (_forecast) => {
-    console.log("calculos", _forecast);
-
-    console.log(_forecast);
-    //console.log(Object.size(_forecast));
-}
+//     console.log(_forecast);
+//     //console.log(Object.size(_forecast));
+//}
 
 export default UpperDashboard

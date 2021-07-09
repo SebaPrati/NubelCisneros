@@ -12,7 +12,7 @@ const SearchBox = e => {
         fetch(url2)
             .then(r => r.json())
             .then(datos => {
-                console.log(datos.lista);
+                // console.log(datos.lista);
                 dispatch({ type: "CARGA_INICIAL", payload: datos.list, ciudad: datos.city.name });
             })
 })
@@ -28,10 +28,14 @@ const SearchBox = e => {
         fetch(url)
             .then(r => r.json())
             .then(datos => {
-                console.log(datos.lista);
+                // console.log(datos.lista);
                 dispatch({ type: "DATOS_PRONOSTICO", payload:datos.list, ciudad: datos.city.name});
             })
         
+//Posibles mensajes de error:
+//zaraza = {"cod":"404","message":"city not found"}
+//ciudad vacia = {"cod":"400","message":"Nothing to geocode"}
+//número entre 
         
          
     }

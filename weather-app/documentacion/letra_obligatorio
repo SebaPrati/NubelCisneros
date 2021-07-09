@@ -1,39 +1,37 @@
-EVALUACIÓN Entrega ENTREGA 11/07/2021
-CURSO Javascript avanzado
-EMPRESA SABRE
-CONDICIONES - La entrega es individual
-- Calificación: mínimo 0 - máximo 1
-APLICACIÓN PARA VISUALIZACIÓN DE CLIMA
-Objetivo
+|========================================|
+|EVALUACIÓN ||Entrega ENTREGA 11/07/2021 |
+|CURSO ||Javascript avanzado             |
+|EMPRESA ||SABRE                         |
+|CONDICIONES | - La entrega es individual|
+|Calificación:   mínimo 0 - máximo 1     |
+==========================================
+
+=-APLICACIÓN PARA VISUALIZACIÓN DE CLIMA-=
+
+=Objetivo=
 El objetivo de la aplicación es permitir a los usuarios hacer búsquedas de pronóstico de tiempo obtenidos
 desde una API REST ofrecida a tales efectos.
-La aplicación
-Al iniciar la aplicación se deberá disponer de un buscador para poder hacer búsquedas de pronóstico de
-tiempo atmosférico para una ciudad. Al obtener la información se deberán actualizar una serie de datos que
-se mostrarán en formato de dashboard responsivo.
-En cualquier momento el usuario deberá poder ingresar un nuevo nombre de ciudad para hacer una nueva
-búsqueda de información.
-Requerimientos Funcionales
+
+=La aplicación=
+Al iniciar la aplicación se deberá disponer de un buscador para poder hacer búsquedas de pronóstico de tiempo atmosférico para una ciudad. Al obtener la información se deberán actualizar una serie de datos que se mostrarán en formato de dashboard responsivo.
+
+En cualquier momento el usuario deberá poder ingresar un nuevo nombre de ciudad para hacer una nueva búsqueda de información.
+
+=Requerimientos Funcionales=
 La aplicación deberá permitir realizar las siguientes funcionalidades:
-1. Búsqueda: Al escribir en el campo de texto y presionar un botón se muestra la información de
-pronóstico de clima de la ciudad escrita en el campo o un aviso de que no hay resultados.
-2. Mostrar la temperatura máxima: En un componente se deberá mostrar la temperatura máxima
-que habrá en los próximos días, sólo se mostrará el mayor valor de los máximos de los próximos
-días.
-3. Mostrar el promedio de temperaturas máximas y mínimas para los siguientes días: Se deberá
-mostrar en un componente aparte el promedio de temperaturas máximas y mínimas a partir del
-pronóstico obtenido.
-4. Recargar: Con cada búsqueda se debe actualizar toda la información del dashboard.
-Requerimientos No Funcionales
-● La aplicación será construida utilizando HTML, CSS, Bootstrap (con diseño responsivo) y Javascript
-(ES6, clases, módulos), la librería React y opcionalmente Redux, conectándose con la API disponible.
-● El editor de desarrollo a utilizar será Visual Studio Code.
-Producto y estructura de la entrega
-El producto final deberá ser una aplicación para navegador web. Se deberá entregar el compilado build de la
-aplicación, pronta para ser ejecutada.
+    1. Búsqueda: Al escribir en el campo de texto y presionar un botón se muestra la información de pronóstico de clima de la ciudad escrita en el campo o un aviso de que no hay resultados.
+    2. Mostrar la temperatura máxima: En un componente se deberá mostrar la temperatura máxima que habrá en los próximos días, sólo se mostrará el mayor valor de los máximos de los próximos días.
+    3. Mostrar el promedio de temperaturas máximas y mínimas para los siguientes días: Se deberá mostrar en un componente aparte el promedio de temperaturas máximas y mínimas a partir del pronóstico obtenido.
+    4. Recargar: Con cada búsqueda se debe actualizar toda la información del dashboard.
+
+=Requerimientos No Funcionales=
+    ● La aplicación será construida utilizando HTML, CSS, Bootstrap (con diseño responsivo) y Javascript (ES6, clases, módulos), la librería React y opcionalmente Redux, conectándose con la API disponible.
+    ● El editor de desarrollo a utilizar será Visual Studio Code.
+
+=Producto y estructura de la entrega=
+El producto final deberá ser una aplicación para navegador web. Se deberá entregar el compilado build de la aplicación, pronta para ser ejecutada.
+
 Se deberá entregar:
-● La carpeta de la aplicación con todos los archivos listos para ejecutarse en un navegador web (Build)
-● El código fuente de la aplicación.
-● El proyecto se deberá subir en el portal del CCJ (https://moodle.zonamerica.org) en un único
-archivo comprimido de tamaño máximo de 50 MB. La fecha límite de entrega está fijada en el
-encabezado de este documento.
+    ● La carpeta de la aplicación con todos los archivos listos para ejecutarse en un navegador web (Build)
+    ● El código fuente de la aplicación.
+    ● El proyecto se deberá subir en el portal del CCJ (https://moodle.zonamerica.org) en un único archivo comprimido de tamaño máximo de 50 MB. La fecha límite de entrega está fijada en el encabezado de este documento.
