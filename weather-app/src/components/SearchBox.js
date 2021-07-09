@@ -25,7 +25,26 @@ const SearchBox = e => {
 
         if (ciudad === "") {
             
-            alert("POR FAVOR INGRESE EL NOMBRE DE UNA CIUDAD");
+            let msg = "";
+            let msgArray = [
+                "POR FAVOR INGRESE EL NOMBRE DE UNA CIUDAD",
+                "REALMENTE NECESITO UNA CIUDAD PARA FUNCIONAR :-)",
+                "CADA VEZ QUE PRESIONAS EL BOTÓN 'BUSCAR' SIN INGRESAR LA CIUDAD, MUERE UNA ESTRELLA EN ALGUNA GALAXIA DISTANTE."
+
+
+
+            ]
+            
+            
+            
+            
+            alert(msgArray[Math.floor(Math.random() * msgArray.length)]);
+
+
+
+
+
+
         } else {
             const url = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${ciudad}&cnt=5&appid=e62b2530fdb5f4ba3559c07c8634e5c7&units=metric`;
             // console.log('beforedispatch', ciudad);
