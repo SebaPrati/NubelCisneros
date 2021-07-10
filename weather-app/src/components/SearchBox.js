@@ -8,7 +8,7 @@ const SearchBox = e => {
 
 
     useEffect(() => {
-        const url2 = `https://api.openweathermap.org/data/2.5/forecast/daily?q=Montevideo&cnt=5&appid=e62b2530fdb5f4ba3559c07c8634e5c7&units=metric`;
+        const url2 = `https://api.openweathermap.org/data/2.5/forecast/daily?q=Montevideo&cnt=6&appid=e62b2530fdb5f4ba3559c07c8634e5c7&units=metric`;
         fetch(url2)
             .then(r => r.json())
             .then(datos => {
@@ -23,7 +23,7 @@ const SearchBox = e => {
 
             alert("POR FAVOR INGRESE EL NOMBRE DE UNA CIUDAD");
         } else {
-            const url = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${ciudad}&cnt=5&appid=e62b2530fdb5f4ba3559c07c8634e5c7&units=metric`;
+            const url = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${ciudad}&cnt=6&appid=e62b2530fdb5f4ba3559c07c8634e5c7&units=metric`;
             fetch(url)
                 .then(r => r.json())
                 .then(datos => {
@@ -34,13 +34,13 @@ const SearchBox = e => {
 
     return (
         <div className='topnav'>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-            <h2 className="text-secondary">Search for a City:</h2>
+            <a href="#about">Nosotros </a>
+            <a href="#contact"> Contacto</a>
+            <h2 className="text-secondary">Buscar Ciudad:</h2>
             <div className="container">
-                <input className="form-control" id="searchinput" type="search" ref={texto} placeholder="Enter City Name.." />
+                <input className="form-control" id="searchinput" type="search" ref={texto} placeholder="Ingrese la ciudad.." />
                 <span class="input-group-btn">
-                    <button class="btn btn-search" type="button" onClick={AgregarCiudad}><i class="fa fa-search fa-fw"></i> Search</button>
+                    <button class="btn btn-search" type="button" onClick={AgregarCiudad}><i class="fa fa-search fa-fw"></i> Buscar</button>
                 </span>
             </div>
         </div >

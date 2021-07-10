@@ -2,13 +2,12 @@ import { useEffect } from "react";
 import React from 'react';
 import initialState from "../store/initialState";
 import { useSelector } from 'react-redux';
-import "./SearchBox.css"
+import "./UpperDashboard.css"
 
 const temperaturas = {
     min: 0,
     max: 0,
 }
-
 
 
 const UpperDashboard = (state = initialState.forecast) => {
@@ -72,7 +71,6 @@ const UpperDashboard = (state = initialState.forecast) => {
     Calculos(forecast);
 
 
-
     //<----------------------------------------------------------->
     function Promedios(temps) {
         let promedio = 0;
@@ -95,97 +93,58 @@ const UpperDashboard = (state = initialState.forecast) => {
     console.log("LAST UPDATED: ", currentDateTime);
 
 
-
-    let arr = currentDateTime.split(" ");
-
-    function DayOfWeek(arr) {
-
-        switch (JSON.stringify(arr[0])) {
-            case ("Mon"):
-                console.log("Hoy es Lunes");
-                break;
-            case ("Tue"):
-                console.log("Hoy es Martes");
-                break;
-            case ("Wed"):
-                console.log("Hoy es Miercoles");
-                break;
-            case ("Thu"):
-                console.log("Hoy es Jueves");
-                break;
-            case ("Fri"):
-                console.log("Hoy es Viernes");
-                break;
-
-            default:
-                break;
-        }
-        return console.log("ESTE ES EL RETORNO", JSON.stringify(arr[0]));
-    }
-
-    DayOfWeek(arr);
-
-    //<----------------------------------------------------------->
-
-    // console.log(forecast[0].temp.max);
-    // valoresTemp.ciudad = useSelector(state => state.ciudad);
-    // const valoresFinales = calculos(forecast.list);
-
-    // console.log('valoresFinales', valoresFinales);
-
     return (
-        <div className="col-md-12 border">
+        <div>
             <div className="row">
-                <h2 className="text-primary">{valoresTemp.ciudad}
-                    {/* icono de tablita del dashboard 
-                    <img
-                        src={`http://openweathermap.org/img/w/${apiData.list[0].weather[0].icon}​​​​​​​​.png`}
-                        alt="weather status icon"
-                        className="weather-icon"
-                    />*/}
+                <h2 className="text-primary letrasGrandes">{valoresTemp.ciudad}, Temperatura de hoy: {valoresTemp.maxDias[0]} ºC
                     <span className="bi bi-ui-checks"></span></h2>
-            </div>   
-           <div className="col-md-3"></div> 
-           <div className="col-md-6">
-            <div className="row">
-                <label className="text-secondary">TEMPERATURA MAXIMA: {valoresTemp.tempMax} </label>
             </div>
-            <div className="row">
-                <label className="text-secondary">TEMPERATURA MINIMA: {valoresTemp.tempMin} </label>
+            <div className="col-3"></div>
+            <div className="col-6 letrasChicas fecha">
+                <div className="row center">
+                    <label className="text-secondary">TEMPERATURA MAXIMA: {valoresTemp.tempMax} ºC</label>
+                </div>
+                <div className="row center">
+                    <label className="text-secondary">TEMPERATURA MINIMA: {valoresTemp.tempMin} ºC</label>
+                </div>
+                <div className="row center">
+                    <label className="text-secondary">TEMPERATURA MAX PROMEDIO: {valoresTemp.promMax} ºC</label>
+                </div>
+                <div className="row center">
+                    <label className="text-secondary">TEMPERATURA MIN PROMEDIO: {valoresTemp.tempMin} ºC</label>
+                </div>
             </div>
-            <div className="row">
-                <label className="text-secondary">TEMPERATURA MAX PROMEDIO: {valoresTemp.promMax} </label>
-            </div>
-            <div className="row">
-                <label className="text-secondary">TEMPERATURA MIN PROMEDIO: {valoresTemp.tempMin}</label>
-            </div>
-             </div> 
-             <div className="col-md-3"> </div>     
-            <div className="row">
+            <div className="col-3"> </div>
+            <div className="row letrasChicas">
                 <div className="col border">
                     <i className="bi bi-cloudy bi-2x" /><br />
-                    <label className="text-secondary">MON</label><br />
-                    <label className="text-secondary">TEMP MON : {valoresTemp.maxDias[0]} </label>
+                    <label className="text-secondary fecha">{fecha(1)}</label><br />
+                    <label className="text-secondary">Max : {valoresTemp.maxDias[1]} ºC</label><br/>
+                    <label className="text-secondary">Min : {valoresTemp.minDias[1]} ºC</label>
                 </div>
                 <div className="col border">
                     <i className="bi bi-cloudy bi-2x" /><br />
-                    <label className="text-secondary">TUE</label><br />
-                    <label className="text-secondary">TEMP TUE: {valoresTemp.maxDias[1]} </label>
+                    <label className="text-secondary fecha">{fecha(2)}</label><br />
+                    <label className="text-secondary">Max : {valoresTemp.maxDias[2]} ºC</label><br/>
+                    <label className="text-secondary">Min : {valoresTemp.minDias[2]} ºC</label>
                 </div>
                 <div className="col border">
                     <i className="bi bi-cloudy bi-2x" /><br />
-                    <label className="text-secondary">WED</label><br />
-                    <label className="text-secondary">TEMP WED: {valoresTemp.maxDias[2]} </label>
+                    <label className="text-secondary fecha">{fecha(3)}</label><br />
+                    <label className="text-secondary">Max : {valoresTemp.maxDias[3]} ºC</label><br/>
+                    <label className="text-secondary">Min : {valoresTemp.minDias[3]} ºC</label>
                 </div>
                 <div className="col border">
                     <i className="bi bi-cloudy bi-2x" /><br />
-                    <label className="text-secondary">THU</label><br />
-                    <label className="text-secondary">TEMP THU: {valoresTemp.maxDias[3]} </label>
+                    <label className="text-secondary fecha">{fecha(4)}</label><br />
+                    <label className="text-secondary">Max : {valoresTemp.maxDias[4]} ºC</label><br/>
+                    <label className="text-secondary">Min : {valoresTemp.minDias[4]} ºC</label>
                 </div>
                 <div className="col border">
                     <i className="bi bi-cloudy bi-2x" /><br />
-                    <label className="text-secondary">FRI</label><br />
-                    <label className="text-secondary">TEMP FRI: {valoresTemp.maxDias[4]} </label>
+                    <label className="text-secondary fecha">{fecha(5)}</label><br />
+                    <label className="text-secondary">Max : {valoresTemp.maxDias[5]} ºC</label><br/>
+                    <label className="text-secondary">Min : {valoresTemp.minDias[5]} ºC</label>
                 </div>
                 <div className="row">
                     <label className="text-secondary"></label>
@@ -202,46 +161,21 @@ const UpperDashboard = (state = initialState.forecast) => {
     )
 }
 
+function fecha(sumarDias) {
+    var hoy = new Date();
+    hoy.setDate(hoy.getDate() + sumarDias);
 
-// const calculos = (forecast) => {
-//     // solo es un comentario. 
-//     let i = 0;
-//     console.log("calculos", forecast);
-//     forecast.forEach(element => {
-//         i++;
-//         console.log('Dia:' + i)
-//         console.log('maxima:', element.temp.max);
-//         console.log('minima:', element.temp.min);
+    var weekday = new Array(7);
+    weekday[0] = "Domingo";
+    weekday[1] = "Lunes";
+    weekday[2] = "Martes";
+    weekday[3] = "Miércoles";
+    weekday[4] = "Jueves";
+    weekday[5] = "Viernes";
+    weekday[6] = "Sábado";
+    var n = weekday[hoy.getDay()]+" "+hoy.getDate()+"/"+String(hoy.getMonth() + 1);   
 
-//         valoresTemp.maxDias.push(Number(element.temp.max))
-//         valoresTemp.minDias.push(Number(element.temp.min))
-//     });
-
-//     valoresTemp.tempMax = Math.max.apply(Math, valoresTemp.maxDias);
-//     valoresTemp.tempMin = Math.min.apply(Math, valoresTemp.minDias);
-
-//     valoresTemp.promMax = promedios(valoresTemp.maxDias);
-//     valoresTemp.promMin = promedios(valoresTemp.maxDias);
-
-//     console.log('maxima general:', valoresTemp.tempMax);
-//     console.log('minima general:', valoresTemp.tempMin);
-//     console.log('promedio maxima :', valoresTemp.promMax);
-//     console.log('promedio minima :', valoresTemp.promMin);
-
-//     return valoresTemp
-// }
-
-// const promedios = (temps) => {
-//     let promedio = 0;
-//     let i = 0
-
-//     temps.forEach(element => {
-//         i++;
-//         promedio = promedio + element;
-//     });
-
-//     return parseFloat(promedio / i).toFixed(2)
-// }
-
+    return n
+}
 
 export default UpperDashboard

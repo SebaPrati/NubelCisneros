@@ -1,27 +1,14 @@
-.icon {
+.mat-icon {
   display:table-footer-group;
   text-align:start;
-  margin: 0px;
   position:initial;
-  height: 60px;
-  width: auto;
-  font:xx-large;
+  height: 24px;
+  width: 24px;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: xx-large;
-  color:rgb(9, 10, 10)
+  font-size:8mm;
+  color:lavender;
 }
 
-.bg { 
-  /* The image used */
-  background-image: url("https://images.pexels.com/photos/2908983/pexels-photo-2908983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 
-  /* Full height */
-  height: 100px; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 

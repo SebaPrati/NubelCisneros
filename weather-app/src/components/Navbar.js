@@ -5,15 +5,14 @@ import "./Navbar.css"
 const Navbar = () => {
     return (
 
-        <div className="bg">
+        <div>
             <head>
                 <Style />
             </head>
             <div>
-                <nav className="navbar navbar-dark bg-dark">
-                    <a className="icon">
-
-                        <i className="icon material-icons">flutter_dash</i>&nbsp;El Sueño de Nubel</a>
+                <nav className="navbar">
+                    <a className="mat-icon">
+                        <i className="icon material-icons">flutter_dash</i>&nbsp;El clima segun Nubel</a>
                     {/* <i className="bi bi-cloudy"></i>&nbsp;Weather App</a> */}
                 </nav>
             </div>
