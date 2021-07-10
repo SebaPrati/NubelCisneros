@@ -22,23 +22,43 @@ const SearchBox = e => {
 
     const AgregarCiudad = e => {
         let ciudad = texto.current.value;
+        var count=0 ;
 
         if (ciudad === "") {
             
+            
             let msg = "";
-            let msgArray = [
-                "POR FAVOR INGRESE EL NOMBRE DE UNA CIUDAD",
-                "REALMENTE NECESITO UNA CIUDAD PARA FUNCIONAR :-)",
-                "CADA VEZ QUE PRESIONAS EL BOTÓN 'BUSCAR' SIN INGRESAR LA CIUDAD, MUERE UNA ESTRELLA EN ALGUNA GALAXIA DISTANTE."
+
+            if (count  <= 1){
+                
+
+                let msgArray = [
+                    "REALMENTE NECESITO UNA CIUDAD PARA FUNCIONAR :-)",
+                    "CADA VEZ QUE PRESIONAS EL BOTÓN 'BUSCAR' SIN INGRESAR LA CIUDAD, MUERE UNA ESTRELLA EN ALGUNA GALAXIA DISTANTE."];
+
+                alert(msgArray[Math.floor(Math.random() * msgArray.length)]);
+                count++;
+                console.log("COUNT extra: ", count);
+
+
+            } else {
+                alert("POR FAVOR INGRESE EL NOMBRE DE UNA CIUDAD")
+                count++;
+                console.log("COUNT inicial: ", count);
+
+}
+
+            
+            
 
 
 
-            ]
             
             
             
             
-            alert(msgArray[Math.floor(Math.random() * msgArray.length)]);
+            
+            
 
 
 
