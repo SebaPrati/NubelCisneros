@@ -28,6 +28,7 @@
   color: #61dafb;
 }
 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -86,5 +87,13 @@
 }
 .bi-10x {
   font-size: 10em;
+}
+
+.bground {
+  background-image: url("https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405_960_720.jpg");
+  height:max-content;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 

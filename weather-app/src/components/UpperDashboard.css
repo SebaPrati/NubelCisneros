@@ -1,0 +1,13 @@
+.letrasGrandes {
+  color: lavender;
+}
+
+.letrasChicas {
+  color: lightgray;
+  text-shadow: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fecha {
+  font-weight: bold;
+}
