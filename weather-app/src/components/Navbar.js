@@ -4,17 +4,17 @@ import "./Navbar.css"
 
 const Navbar = () => {
     return (
-
         <div>
             <head>
                 <Style />
             </head>
-            <div>
-                <nav className="navbar">
-                    <a className="mat-icon">
-                        <i className="icon material-icons">flutter_dash</i>&nbsp;El clima segun Nubel</a>
-                    {/* <i className="bi bi-cloudy"></i>&nbsp;Weather App</a> */}
-                </nav>
+            <div class='row'>
+                <div class='col-3'>
+                    <nav className="navbar">
+                        <a className="mat-icon">
+                            <i className="icon material-icons">flutter_dash</i> El clima según Nubel</a>
+                    </nav>
+                </div>
             </div>
         </div>
 
