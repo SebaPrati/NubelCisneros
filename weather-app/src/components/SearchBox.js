@@ -33,17 +33,13 @@ const SearchBox = e => {
     }
 
     return (
-        <div className='topnav'>
-            <a href="#about">Nosotros </a>
-            <a href="#contact"> Contacto</a>
+        <div className="container col col-mg-3 topnav">
             <h2 className="text-secondary">Buscar Ciudad:</h2>
-            <div className="container">
-                <input className="form-control" id="searchinput" type="search" ref={texto} placeholder="Ingrese la ciudad.." />
-                <span class="input-group-btn">
-                    <button class="btn btn-search" type="button" onClick={AgregarCiudad}><i class="fa fa-search fa-fw"></i> Buscar</button>
-                </span>
-            </div>
-        </div >
+            <input className="form-control" id="searchinput" type="search" ref={texto} placeholder="Ingrese la ciudad.." />
+            <span class="input-group-btn">
+                <button class="btn btn-search" type="button" onClick={AgregarCiudad}><i class="fa fa-search fa-fw"></i> Buscar</button>
+            </span>
+        </div>
     )
 }
 

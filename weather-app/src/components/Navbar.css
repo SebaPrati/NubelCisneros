@@ -1,18 +1,12 @@
 .mat-icon {
   display: table-footer-group;
-  /* text-align:start; */
+  text-align: start;
   position: initial;
   height: 24px;
   width: 24px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 8mm;
   color: lavender;
-}
-.test {
-  font-size: large;
-  color: lavender;
-  text-align: center;
-  font-weight: bolder;
 }
 .navigation {
   display: flex;

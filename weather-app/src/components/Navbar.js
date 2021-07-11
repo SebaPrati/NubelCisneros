@@ -10,7 +10,7 @@ const Navbar = () => {
             </head>
             <div class='row'>
                 <div class='col-3'>
-                    <nav className="navbar">
+                    <nav className="navbar .navigation">
                         <a className="mat-icon">
                             <i className="icon material-icons">flutter_dash</i> El clima según Nubel</a>
                     </nav>
